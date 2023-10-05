@@ -1,0 +1,9 @@
+string uri
+int64 port
+string username
+string password
+string mountpoint
+
+---
+
+bool success

@@ -1,0 +1,16 @@
+ref_station_tracker:
+  ros__parameters:
+    General:
+      update_ntrip: true
+      update_novatel: true
+      update_mqtt: true
+      max_pos_std: 0.1 # ntrip caster update threshold, matches 2d-SD in NovatelApplicationSuite
+      wait_time: 300.0 # wait time between SAVECONFIG cmd and MQTT msg
+      polling_frequency: 0.2 # "polling" frequency rover position from /novatel/oem7/BESTPOS
+    MQTT:
+      broker: "192.168.31.18"
+      port: 1883
+      topic: "ntrip_ros/ntrip_caster"
+      id: "1001"
+      username: ""
+      password: ""
